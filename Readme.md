@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олька Цыганова](https://up.htmlacademy.ru/adaptive/21/user/1426921).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Пасунько`.
 
 ---
 
