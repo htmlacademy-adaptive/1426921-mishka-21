@@ -3,27 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="#" width="320" height="79" alt="Mishka">
+        <img class="page-header__logo-img" src="img/mishka-logo-mobile.svg.svg" width="86" height="35" alt="Mishka">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">Каталог товаров</a>
+            <li class="site-list__item list">
+              <a class="site-list__item link" href="#">Каталог товаров</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Вязание на заказ</a>
+            <li class="site-list__item list">
+              <a class="site-list__item link" href="#">Вязание на заказ</a>
+              <li class="site-list__item list">Поиск по сайту</li>
+              <li class="site-list__item list">Корзина: пока пуста</li>
             </li>
-          </ul>
-          <ul class="main-nav__search-and-cart">
-            <li class="site-search">Поиск по сайту</li>
-            <li class="site-cart">Корзина: пока пуста</li>
-          </ul>
           </div>
       </nav>
     </header>
@@ -31,19 +30,19 @@
       <section class="catalog">
         <h2 class="catalog__header">Каталог товаров</h2>
         <div class="catalog__product-card">
-          <img class="catalog__product-img" src="#" width="260" height="195" alt="Вязаный заяц">
+          <img class="catalog__product-img" src="img/hare-catalog.jpg" width="260" height="195" alt="Вязаный заяц">
           <p class="catalog__product-name">Зайчик-попрыгайчик</p>
           <p class="catalog__product-text">Рост 30 см, вес 200 г</p>
           <p class="catalog__product-price">1 200 руб.</p>
         </div>
         <div class="catalog__product-card">
-          <img class="catalog__product-img" src="#" width="260" height="195" alt="Корзинка для белья">
+          <img class="catalog__product-img" src="img/basket-catalog.jpg" width="260" height="195" alt="Корзинка для белья">
           <p class="catalog__product-name">Корзинка для белья</p>
           <p class="catalog__product-text">Диаметр 15 см, высота 10 см</p>
           <p class="catalog__product-price">690 руб.</p>
         </div>
         <div class="catalog__product-card">
-          <img class="catalog__product-img" src="#" width="260" height="195" alt="Большая корзинка">
+          <img class="catalog__product-img" src="img/big-basket-catalog.jpg" width="260" height="195" alt="Большая корзинка">
           <p class="catalog__product-name">Большая корзинка для игрушек</p>
           <p class="catalog__product-text">Диаметр 30 см, высота 30 см</p>
           <p class="catalog__product-price">1 500 руб.</p>
@@ -51,31 +50,31 @@
       </section>
       <section class="production-process">
         <h2 class="production-process__title">Процесс производства</h2>
-        <video class="production-process__video" width="260" height="150" controls poster="#">
+        <video class="production-process__video" width="260" height="150" controls poster="img/video-preview.jpg">
           <source src="#" type="video/mp4">
         </video>
         <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="production-process__make-order" href="#">Сделать заказ</a>
+        <a class="production-process__make-order button" href="#">Сделать заказ</a>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social">
-          <ul class="social__list">
+        <div class="page-footer__social social">
+          <ul class="social__list list">
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="#"">Instagram</a>
+              <a class="social__link social__link--instagram link" href="#"">Instagram</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="#"">Facebook</a>
+              <a class="social__link social__link--facebook link" href="#"">Facebook</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--twitter" href="#"">Twitter</a>
+              <a class="social__link social__link--twitter link" href="#"">Twitter</a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright __text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
