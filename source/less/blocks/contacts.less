@@ -1,6 +1,13 @@
 .contacts__wrapper {
+  display: flex;
+  flex-direction: column;
   padding-left: 30px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin: auto;
+    flex-direction: row;
+  }
 }
 
 .contacts__title {
@@ -11,6 +18,10 @@
 .contacts__type {
   font-size: 14px;
   color: @brown-text;
+}
+
+.contacts__type--email {
+  border-bottom: 1px solid @mint-light;
 }
 
 .contacts__write-us-button {

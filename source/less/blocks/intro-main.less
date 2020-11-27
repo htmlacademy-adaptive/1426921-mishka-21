@@ -1,6 +1,6 @@
 .intro-main {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .intro-main__header {
@@ -9,18 +9,20 @@
   font-size: 27px;
   line-height: 30px;
   margin: 0;
-  padding: 50px;
   align-self: center;
   text-align: center;
+  flex: 100%;
 }
 
 .intro-main__button {
-  display: block;
+  /*display: flex; */
   padding: 24px 160px 31px 30px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: @white;
+  box-sizing: border-box;
+  flex: 50%;
 }
 
 .intro-main__button--interior {
