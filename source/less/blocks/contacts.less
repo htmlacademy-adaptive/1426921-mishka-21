@@ -1,3 +1,10 @@
+.contacts {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
@@ -27,4 +34,16 @@
 .contacts__write-us-button {
   margin-left: 35px;
   padding: 16px 38px;
+
+  @media (min-width: @desktop-width) {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+}
+
+.contacts__map {
+  @media (min-width: @desktop-width) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }

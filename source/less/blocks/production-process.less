@@ -1,3 +1,13 @@
+.production-process {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .production-process__title {
   font-weight: bold;
   font-size: 17px;
