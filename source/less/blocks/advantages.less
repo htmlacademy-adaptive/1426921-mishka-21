@@ -10,6 +10,8 @@
 
 .advantages__list {
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
@@ -17,4 +19,9 @@
   font-size: 17px;
   line-height: 20px;
   margin-top: 83px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex: 50%;
+  }
 }

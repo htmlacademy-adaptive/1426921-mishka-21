@@ -2,8 +2,39 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
-  background: @white;
+  background: @gray-footer;
   padding: 25px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.catalog__product-card {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .catalog__product-name {
