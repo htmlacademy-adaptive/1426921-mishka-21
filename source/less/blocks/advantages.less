@@ -1,11 +1,21 @@
 .advantages__wrapper {
   padding: 31px;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
+  }
 }
 
 .advantages__header {
   font-weight: bold;
   font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .advantages__list {
@@ -24,4 +34,11 @@
     display: flex;
     flex: 50%;
   }
+}
+
+.advantages__item::before {
+  content: "";
+  background-image: url("/source/img/icon-flower.svg.svg");
+  display: block;
+  position: absolute;
 }

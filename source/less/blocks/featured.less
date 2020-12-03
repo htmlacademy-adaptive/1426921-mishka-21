@@ -1,6 +1,7 @@
 .featured {
   display: flex;
   flex-wrap: wrap;
+  margin: 35px 30px 0 30px;
 }
 
 .featured__heading {
@@ -8,6 +9,11 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 
   @media (min-width: @desktop-width) {
     position: absolute;
@@ -21,10 +27,11 @@
 .featured__product {
   font-weight: bold;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 17px;
   color: @mint-light;
   text-transform: uppercase;
-  margin: 0;
+  text-align: center;
+  margin: 12px 0 0 0;
 
   @media (min-width: @desktop-width) {
     position: absolute;
@@ -37,10 +44,27 @@
   font-size: 15px;
   line-height: 24px;
   color: @brown-text;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .featured-table {
-  margin: 0;
+  margin: 35px 0 28px 0;
+  color: @brown-text;
+}
+
+.cell {
+  text-align: left;
+  border-bottom: 1px solid @gray-table;
+  height: 40px;
+  vertical-align: center;
+}
+
+.featured-table__cell {
+  padding-left: 30px;
 }
 
 .featured__price {
@@ -58,7 +82,8 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-bottom: 35px;
   }
 
   @media (min-width: @desktop-width) {
@@ -70,11 +95,11 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 292px 633px;
   }
 }
 
@@ -86,8 +111,14 @@
   justify-content: space-between;
 
   @media (min-width: @desktop-width) {
-    margin-top: 100px;
+    margin: 100px 20px 0 175px;
   }
+}
+
+.featured__price-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .featured__img {
@@ -95,5 +126,6 @@
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    margin-left: auto;
   }
 }

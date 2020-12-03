@@ -4,4 +4,12 @@
   line-height: 24px;
   padding: 28.5px 0 28.5px 0;
   color: @black;
+
+  @media (max-width: @mobile-width-only) {
+    box-shadow: 0 1px 0 @gray-table, inset 0 1px 0 @gray-table;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
 }
