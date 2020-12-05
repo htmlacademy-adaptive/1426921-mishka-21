@@ -8,11 +8,14 @@
 .page-footer__wrapper {
   display: grid;
   gap: 10px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .social__list {
   display: flex;
-  justify-content: space-evenly;
 }
 
 .page-footer__copyright {
@@ -21,6 +24,9 @@
 }
 
 .page-footer__logo-img {
+  display: block;
+  margin: 50px;
+
   @media (max-width: @mobile-width-only) {
     display: none;
   }
