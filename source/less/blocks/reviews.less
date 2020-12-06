@@ -4,6 +4,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/review-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/review-desktop.jpg");
+    padding-left: 175px;
+    padding-bottom: 95px;
   }
 }
 
@@ -33,6 +41,10 @@
 .reviews__text {
   font-size: 15px;
   color: @brown-text;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-name {
@@ -53,5 +65,9 @@
     grid-column-start: 2;
     grid-row-start: 1;
     margin: 55px 100px 55px 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 50px auto;
   }
 }

@@ -1,7 +1,6 @@
 .intro-form {
   display: flex;
   flex-direction: column;
-  padding: 0 30px 0 30px;
 }
 
 .intro-form__header {
@@ -10,9 +9,10 @@
   line-height: 30px;
   background: @gray-footer;
   margin: 0;
+  padding: 73px 0 75px 0;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    text-align: center;
     font-size: 43px;
     line-height: 50px;
     padding: 101px 0 0 0;
@@ -30,5 +30,14 @@
   font-size: 13px;
   line-height: 24px;
   color: @brown-text;
-  text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 54px 50px 54px 50px;
+  }
 }
