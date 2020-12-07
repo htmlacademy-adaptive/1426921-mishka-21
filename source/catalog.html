@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body container">
@@ -13,7 +12,6 @@
         <picture>
           <source srcset="img/mishka-logo-desktop.svg.svg" media="(min-width: 1150px)">
           <source srcset="img/mishka-logo-tablet.svg.svg" media="(min-width: 768px)">
-          <source srcset="img/mishka-logo-mobile.svg.svg" media="(min-width: 320px)">
         <img class="page-header__logo-img" src="img/mishka-logo-mobile.svg.svg" alt="Mishka">
         </picture>
       </a>
@@ -54,9 +52,9 @@
         <div class="catalog__wrapper">
         <div class="catalog__product-card">
           <picture>
-          <source srcset="img/hare-desktop.jpg" media="(min-width: 1150px)">
-          <source srcset="img/hare-tablet.jpg" media="(min-width: 768px)">
-          <img class="catalog__product-img" src="img/hare-catalog.jpg" alt="Вязаный заяц">
+          <source srcset="img/hare-desktop.jpg 1x, img/hare-desktop2x.jpeg 2x" media="(min-width: 1150px)">
+          <source srcset="img/hare-tablet.jpg 1x, img/hare-tablet2x.jpg 2x" media="(min-width: 768px)">
+          <img class="catalog__product-img" src="img/hare-catalog.jpg" srcset="img/hare-mobile2x 2x" alt="Вязаный заяц">
           </picture>
           <div class="catalog__container">
           <p class="catalog__product-name">Зайчик-попрыгайчик</p>
@@ -66,9 +64,9 @@
         </div>
         <div class="catalog__product-card">
           <picture>
-            <source srcset="img/basket-desktop.jpg" media="(min-width: 1150px)">
-            <source srcset="img/basket-tablet.jpg" media="(min-width: 768px)">
-          <img class="catalog__product-img" src="img/basket-catalog.jpg" alt="Корзинка для белья">
+            <source srcset="img/basket-desktop.jpg 1x, img/basket-desktop2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/basket-tablet.jpg 1x, img/basket-tablet2x.jpg 2x" media="(min-width: 768px)">
+          <img class="catalog__product-img" src="img/basket-catalog.jpg" srcset="img/basket-mobile2x.jpeg 2x" alt="Корзинка для белья">
         </picture>
           <div class="catalog__container">
           <p class="catalog__product-name">Корзинка для белья</p>
@@ -78,9 +76,9 @@
         </div>
         <div class="catalog__product-card">
           <picture>
-          <source srcset="img/big-basket-desktop.jpg" media="(min-width: 1150px)">
-          <source srcset="img/big-basket-tablet.jpg" media="(min-width: 768px)">
-          <img class="catalog__product-img" src="img/big-basket-catalog.jpg" alt="Большая корзинка">
+          <source srcset="img/big-basket-desktop.jpg 1x, img/big-basket-desktop2x.jpg 2x" media="(min-width: 1150px)">
+          <source srcset="img/big-basket-tablet.jpg 1x, img/big-basket-tablet2x.jpg 2x" media="(min-width: 768px)">
+          <img class="catalog__product-img" src="img/big-basket-catalog.jpg" srcset="img/big-basket-mobile2x.jpeg 2x" alt="Большая корзинка">
         </picture>
           <div class="catalog__container">
           <p class="catalog__product-name">Большая корзинка<br> для игрушек</p>
@@ -91,9 +89,11 @@
       </div>
       </section>
       <section class="production-process">
-        <video class="production-process__video" width="260" height="150" controls poster="img/video-preview.jpg">
-          <source src="#" type="video/mp4">
-        </video>
+        <div class="production-process__wrap">
+          <iframe class="production-process__video"></iframe>
+          <button class="production-process__play-video" type="button">
+            <img src="img/play.svg" width="101" height="77" alt="кнопка воспроизведения"></button>
+        </div>
         <div class="production-process__container">
         <h2 class="production-process__title">Процесс производства</h2>
         <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -147,8 +147,8 @@
     </footer>
     <section class="modal-cart">
       <h2 class="modal-cart__header">Добавить в корзину</h2>
-      <form class="modal-cart__form">
       <p class="modal-cart__text">Выберите размер:</p>
+      <form class="modal-cart__form">
       <label class="modal-cart__label" for="size-s">S
         <input type="radio" id="size-s" name="size[]">
       </label>

@@ -4,14 +4,23 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/review-tablet.jpg");
+    background-image: url("../../img/review-tablet.jpg");
     background-repeat: no-repeat;
+    background-size: 350px 457px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/review2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/review-desktop.jpg");
+    background-image: url("../../img/review-desktop.jpg");
     padding-left: 175px;
     padding-bottom: 95px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/review-desktop2x.jpg");
+    }
   }
 }
 

@@ -1,10 +1,11 @@
 .intro-main {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .intro-main__header {
-  background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/header-bg.jpg");
+  background-image: url("../../img/header-bg.jpg");
   background-repeat: no-repeat;
   font-weight: bold;
   font-size: 27px;
@@ -16,31 +17,35 @@
   padding-top: 80px;
   box-sizing: border-box;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header-mobile2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
-    background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/background-tablet.jpg");
+    background-image: url("../../img/header-tablet.jpg");
     background-size: 772px auto;
     padding-bottom: 470px;
     padding-top: 160px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/background-tablet2x.jpg");
+      background-image: url("../../img/header-tablet2x.jpg");
     }
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/background-desktop.jpg");
+    background-image: url("../../img/header-desktop.jpg");
     background-size: 1150px auto;
     padding-bottom: 470px;
     padding-top: 160px;
-  }
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("file:///C:/Users/Olya/Desktop/1426921-mishka-21/source/img/background-mobile2x.jpg");
-    background-size: 320px auto;
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/header-desktop2x.jpg");
+    }
   }
 }
 
@@ -59,6 +64,27 @@
   background-color: @mint-light;
 }
 
+.intro-main__button--interior::after {
+  content: "";
+  background-image: url("../../img/lamp.svg");
+  background-position: center;
+  width: 40px;
+  height: 62px;
+  position: absolute;
+  left: 250px;
+}
+
 .intro-main__button--toys {
   background-color: @mint-dark;
+}
+
+.intro-main__button--toys::after {
+  content: "";
+  background-image: url("../../img/toy.svg");
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 240px;
+  bottom: 20px;
 }
