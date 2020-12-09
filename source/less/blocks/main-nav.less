@@ -6,6 +6,10 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -108,7 +112,13 @@
   @media (min-width: @desktop-width) {
     display: flex;
     position: absolute;
+    margin-left: 50px;
+    font-weight: bold;
   }
+}
+
+.main-nav__inner-wrap--sale {
+  margin-left: 45px;
 }
 
 .main-nav__toggle {

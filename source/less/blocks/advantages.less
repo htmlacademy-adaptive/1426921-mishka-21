@@ -16,6 +16,11 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .advantages__list {
@@ -31,14 +36,55 @@
   margin-top: 83px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex: 50%;
+    width: 50%;
+    position: relative;
   }
 }
 
-.advantages__item::before {
+.advantages__item--flower::before {
   content: "";
-  background-image: url("/source/img/icon-flower.svg.svg");
+  background-image: url("../../img/icon-flower.svg.svg");
   display: block;
-  position: absolute;
+  width: 33px;
+  height: 38px;
+}
+
+.advantages__item--money::before {
+  content: "";
+  background-image: url("../../img/icon-money.svg.svg");
+  display: block;
+  width: 47px;
+  height: 27px;
+}
+
+.advantages__item--heart::before {
+  content: "";
+  background-image: url("../../img/icon-heart.svg.svg");
+  display: block;
+  width: 34px;
+  height: 27px;
+}
+
+.advantages__item--knit::before {
+  content: "";
+  background-image: url("../../img/icon-ball.svg.svg");
+  display: block;
+  width: 35px;
+  height: 34px;
+}
+
+.advantages__item--rocket::before {
+  content: "";
+  background-image: url("../../img/icon-rocket.svg.svg");
+  display: block;
+  width: 55px;
+  height: 23px;
+}
+
+.advantages__item--gift::before {
+  content: "";
+  background-image: url("../../img/icon-gift.svg.svg");
+  display: block;
+  width: 33px;
+  height: 32px;
 }

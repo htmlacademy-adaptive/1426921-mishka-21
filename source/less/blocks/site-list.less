@@ -6,10 +6,20 @@
   color: @black;
 
   @media (max-width: @mobile-width-only) {
-    box-shadow: 0 1px 0 @gray-table, inset 0 1px 0 @gray-table;
+    border-top: 1px solid @gray-table;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
+  }
+}
+
+.site-list__item--knitting {
+  @media (min-width: @tablet-width) {
+    margin-left: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 41px;
   }
 }

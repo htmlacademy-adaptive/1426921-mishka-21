@@ -3,7 +3,7 @@
   font-size: 27px;
   line-height: 30px;
   background: @gray-footer;
-  padding: 25px;
+  padding: 74px 25px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -24,12 +24,21 @@
   }
 }
 
+.catalog__container {
+  @media (min-width: @tablet-width) {
+    margin: 30px;
+  }
+}
+
 .catalog__product-card {
   display: flex;
   flex-direction: column;
+  margin: 0 30px 0 30px;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    margin: 54px 50px 54px 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,4 +62,8 @@
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 70px;
+  }
 }
