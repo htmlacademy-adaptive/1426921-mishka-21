@@ -2,8 +2,35 @@
   padding: 31px;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    margin: 0 20px;
+  }
+
   @media (min-width: @desktop-width) {
     margin-left: 175px;
+  }
+}
+
+.advantages__wrapper::before {
+  content: "";
+  background-image: url("../../img/zigzag-line-mobile.svg");
+  display: block;
+  height: 6px;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/zigzag-line-tablet.svg");
+    height: 17px;
+    width: 772px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/zigzag-line-desktop.svg");
+    height: 23px;
+    width: 1050px;
   }
 }
 
@@ -33,7 +60,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-  margin-top: 83px;
+  margin-top: 33px;
 
   @media (min-width: @tablet-width) {
     width: 50%;
@@ -47,6 +74,7 @@
   display: block;
   width: 33px;
   height: 38px;
+  margin-bottom: 20px;
 }
 
 .advantages__item--money::before {
@@ -55,6 +83,7 @@
   display: block;
   width: 47px;
   height: 27px;
+  margin-bottom: 20px;
 }
 
 .advantages__item--heart::before {
@@ -63,6 +92,7 @@
   display: block;
   width: 34px;
   height: 27px;
+  margin-bottom: 20px;
 }
 
 .advantages__item--knit::before {
@@ -71,6 +101,7 @@
   display: block;
   width: 35px;
   height: 34px;
+  margin-bottom: 20px;
 }
 
 .advantages__item--rocket::before {
@@ -79,6 +110,7 @@
   display: block;
   width: 55px;
   height: 23px;
+  margin-bottom: 20px;
 }
 
 .advantages__item--gift::before {
@@ -87,4 +119,5 @@
   display: block;
   width: 33px;
   height: 32px;
+  margin-bottom: 20px;
 }
