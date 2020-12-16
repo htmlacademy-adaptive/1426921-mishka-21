@@ -2,12 +2,21 @@
   display: flex;
   padding: 0;
   justify-content: center;
+  margin: 25px 89px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 50px;
+    margin-top: 50px 25px;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 .social__link--facebook {
   margin: 41px;
+}
+
+.social__link {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
