@@ -1,3 +1,7 @@
+.catalog {
+  position: relative;
+}
+
 .catalog__header {
   font-weight: bold;
   font-size: 27px;
@@ -17,6 +21,25 @@
   }
 }
 
+.catalog__header::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/zigzag-fill-desktop.svg");
+    width: 770px;
+    height: 24px;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/zigzag-fill-desktop-big.svg");
+    width: 1150px;
+    height: 24px;
+    top: 190px;
+    left: 50px;
+  }
+}
+
 .catalog__wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
@@ -25,6 +48,8 @@
 }
 
 .catalog__container {
+  margin: 27px 27px 27px 5px;
+
   @media (min-width: @tablet-width) {
     margin: 30px;
   }
@@ -33,8 +58,11 @@
 .catalog__product-card {
   display: flex;
   flex-direction: column;
-  margin: 0 30px 0 30px;
+  margin: 0 30px 30px 30px;
   align-items: center;
+  position: relative;
+  border: 1px solid @gray-table;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -50,12 +78,24 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .catalog__product-text {
   font-size: 13px;
   line-height: 30px;
   color: @brown-text;
+  margin: 0;
+  padding-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .catalog__product-price {
@@ -64,6 +104,34 @@
   line-height: 24px;
 
   @media (min-width: @tablet-width) {
+    font-size: 17px;
     margin-top: 70px;
   }
+}
+
+.catalog__product-price::before {
+  content: "";
+  position: absolute;
+  width: 204px;
+  height: 1px;
+  background-color: @gray-table;
+}
+
+.catalog__product-svg path:hover,
+.catalog__product-svg path:focus {
+  fill: @mint-light;
+}
+
+.catalog__product-svg path:focus {
+  fill: @mint-light;
+  opacity: 0.3;
+}
+
+.catalog__link {
+  color: @black;
+}
+
+.catalog__link:hover,
+.catalog__link:focus {
+  opacity: 0.6;
 }

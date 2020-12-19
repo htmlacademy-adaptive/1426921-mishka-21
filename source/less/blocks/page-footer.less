@@ -7,6 +7,7 @@
 
 .page-footer__wrapper {
   display: grid;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -20,6 +21,17 @@
   margin: 22px;
 }
 
+.page-footer__copyright::before {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: @gray-divider;
+    top: 80px;
+  }
+}
+
 .page-footer__logo-img {
   display: block;
   margin: 50px;
@@ -27,4 +39,13 @@
   @media (max-width: @mobile-width-only) {
     display: none;
   }
+}
+
+.page-footer__logo-img path:hover,
+.page-footer__logo-img path:focus {
+  fill: @social-hover;
+}
+
+.page-footer__logo-img path:active {
+  fill: @social-hover-low-opacity;
 }

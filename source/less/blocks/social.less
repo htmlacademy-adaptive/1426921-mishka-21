@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    justify-content: center;
+  }
 }
 
 .social__link--facebook {
@@ -19,4 +23,13 @@
   @media (min-width: @tablet-width) {
     display: block;
   }
+}
+
+.social__link-svg path:hover,
+.social__link-svg path:focus {
+  fill: @social-hover;
+}
+
+.social__link-svg path:active {
+  fill: @social-hover-low-opacity;
 }

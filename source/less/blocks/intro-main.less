@@ -2,12 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+    background: @gray-bg;
+  }
 }
 
 .intro-main__header {
   background-image: url("../../img/header-bg.jpg");
   background-repeat: no-repeat;
-  background-color: @gray-footer;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
@@ -87,6 +91,7 @@
   @media (min-width: @tablet-width) {
     line-height: 30px;
     font-size: 20px;
+    position: relative;
   }
 }
 
@@ -105,15 +110,8 @@
   width: 40px;
   height: 62px;
   position: absolute;
-  left: 200px;
-
-  @media (min-width: @tablet-width) {
-    left: 300px;
-  }
-
-  @media (min-width: @desktop-width) {
-    left: 500px;
-  }
+  left: auto;
+  right: 20px;
 }
 
 .intro-main__button--toys {
@@ -127,14 +125,7 @@
   width: 60px;
   height: 60px;
   position: absolute;
-  left: 200px;
+  left: auto;
+  right: 20px;
   bottom: 20px;
-
-  @media (min-width: @tablet-width) {
-    left: 650px;
-  }
-
-  @media (min-width: @desktop-width) {
-    left: 1050px;
-  }
 }
