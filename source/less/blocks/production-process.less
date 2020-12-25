@@ -5,6 +5,10 @@
   margin: 30px;
   border: 1px solid @gray-table;
 
+  @media (min-width: @tablet-width) {
+    margin: 60px;
+  }
+
   @media (min-width: @desktop-width) {
     flex-direction: row;
   }
@@ -16,6 +20,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: column;
+    margin: 20px 36px 10px 80px;
   }
 }
 
@@ -25,12 +30,31 @@
   width: 32px;
   height: 22px;
   position: absolute;
+
+  @media (min-width: @tablet-width) {
+    bottom: 478px;
+    left: 105px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 850px;
+    bottom: 600px;
+  }
 }
 
 .production-process__title {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin: 30px 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    margin: 50px 110px 0 50px;
+  }
 }
 
 .production-process__text {
@@ -41,13 +65,24 @@
   @media (min-width: @tablet-width) {
     font-size: 15px;
     line-height: 30px;
+    margin: 0;
+    padding: 0;
   }
 }
 
 .production-process__make-order {
   padding: 18px 11px;
   text-decoration: none;
-  margin: 20px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-top: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 20px;
+  }
 }
 
 .production-process__wrap {
@@ -55,7 +90,18 @@
   width: 100%;
   padding-top: 58.2%;
   margin-bottom: 28px;
-  background: @gray-footer url("../../img/video-preview.jpg") 50% 0/100% 100% no-repeat;
+  background: @gray-footer url("../../img/video-preview.jpg") 50% 50% no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 68%;
+    margin: 0;
+    background: url("../../img/video-tablet.jpg") 50% 50% no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../../img/video-desktop.jpg") 50% 50% no-repeat;
+    padding: 220px 140px;
+  }
 }
 
 .production-process__video {
@@ -67,8 +113,42 @@
   border: 0;
   background-color: @gray-footer;
   z-index: -1;
+
+  @media (max-width: @mobile-width-only) {
+    order: 2;
+  }
+}
+
+.production-process__small-wrapper {
+  @media (max-width: @mobile-width-only) {
+    order: 1;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 42px 46px;
+  }
 }
 
 .production-process__play-video {
   border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.production-process__svg:hover {
+  transform: scale(1.2);
+}
+
+.production-process__svg:active {
+  transform: scale(0.8);
+  opacity: 0.3;
 }

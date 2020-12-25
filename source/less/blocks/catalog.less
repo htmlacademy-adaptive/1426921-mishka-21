@@ -9,10 +9,12 @@
   background: @gray-footer;
   padding: 74px 25px;
   text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 100px;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,22 +27,25 @@
   @media (min-width: @tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/zigzag-fill-desktop.svg");
+    background-image: url("../../img/zigzag-fill-tablet.svg");
     width: 770px;
     height: 24px;
     left: 0;
+    top: 200px;
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../../img/zigzag-fill-desktop-big.svg");
+    background-image: url("../../img/zigzag-fill-desktop.svg");
     width: 1150px;
     height: 24px;
-    top: 190px;
-    left: 50px;
+    top: 210px;
+    left: 10px;
   }
 }
 
 .catalog__wrapper {
+  margin-top: 30px;
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: center;
@@ -48,11 +53,11 @@
 }
 
 .catalog__container {
-  margin: 27px 27px 27px 5px;
+  padding: 27px 45px 27px 28px;
+}
 
-  @media (min-width: @tablet-width) {
-    margin: 30px;
-  }
+.catalog__container:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .catalog__product-card {
@@ -63,6 +68,7 @@
   position: relative;
   border: 1px solid @gray-table;
   box-sizing: border-box;
+  height: 100%;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -72,6 +78,10 @@
   @media (min-width: @desktop-width) {
     flex-direction: column;
   }
+}
+
+.catalog__product-img {
+  display: block;
 }
 
 .catalog__product-name {
@@ -105,7 +115,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
-    margin-top: 70px;
   }
 }
 
@@ -115,6 +124,13 @@
   width: 204px;
   height: 1px;
   background-color: @gray-table;
+  top: 315px;
+}
+
+.catalog__product-svg {
+  position: absolute;
+  left: 190px;
+  top: 110px;
 }
 
 .catalog__product-svg path:hover,
@@ -128,6 +144,7 @@
 }
 
 .catalog__link {
+  position: relative;
   color: @black;
 }
 

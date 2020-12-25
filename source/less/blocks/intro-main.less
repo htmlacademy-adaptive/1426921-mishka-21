@@ -99,8 +99,9 @@
   background-color: @mint-light;
 }
 
-.intro-main__button:hover {
-  padding: 24px 190px 36px 30px;
+.intro-main__button:hover,
+.intro-main__button:focus {
+  top: -5px;
 }
 
 .intro-main__button--interior::after {
@@ -111,7 +112,16 @@
   height: 62px;
   position: absolute;
   left: auto;
-  right: 20px;
+  right: 50px;
+  opacity: 0.5;
+}
+
+.intro-main__button:hover::after {
+  opacity: 0.7;
+}
+
+.intro-main__button:active::after {
+  opacity: 0.3;
 }
 
 .intro-main__button--toys {
@@ -126,6 +136,11 @@
   height: 60px;
   position: absolute;
   left: auto;
-  right: 20px;
+  right: 40px;
   bottom: 20px;
+  opacity: 0.5;
+
+  @media (min-width: @tablet-width) {
+    top: 20px;
+  }
 }
