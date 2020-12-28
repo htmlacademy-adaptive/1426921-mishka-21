@@ -8,7 +8,7 @@
   </head>
   <body class="page__body container">
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <picture>
           <source srcset="img/mishka-logo-desktop.svg.svg" media="(min-width: 1150px)">
           <source srcset="img/mishka-logo-tablet.svg.svg" media="(min-width: 768px)">
@@ -20,10 +20,10 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list container">
             <li class="site-list__item list">
-              <a class="site-list__item link nav-link" href="#">Каталог товаров</a>
+              <a class="site-list__item link nav-link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item list">
-              <a class="site-list__item site-list__item--knitting link nav-link" href="#">Вязание на заказ</a>
+              <a class="site-list__item site-list__item--knitting link nav-link" href="knitting.html">Вязание на заказ</a>
             </li>
         </ul>
         <div class="main-nav__container">
@@ -41,8 +41,8 @@
         <p class="main-nav__free-delivery">Бесплатная доставка по России</p>
       </div>
       <div class="main-nav__inner-wrap">
-        <a class="main-nav__inner-wrap--new link" href="#">Новые поступления</a>
-        <a class="main-nav__inner-wrap--sale link" href="#" >Распродажа</a>
+        <a class="main-nav__inner-wrap--new nav-link link" href="new.html">Новые поступления</a>
+        <a class="main-nav__inner-wrap--sale nav-link link" href="sale.html" >Распродажа</a>
       </div>
       </nav>
     </header>
@@ -61,7 +61,7 @@
             <label class="form__radio-label label" for="toy">Детская игрушка</label>
           </div>
         </div>
-          <div class="form__fieldset gray">
+          <div class="form__fieldset form__fieldset--gray">
           <legend class="form__legend form__legend--color">Цвет</legend>
           <ul class="form__checkbox form__list list">
             <li class="form__checkbox-item">
@@ -107,13 +107,13 @@
               </li>
             </ul>
           </div>
-            <div class="form__small-container gray">
+            <div class="form__small-container form__small-container--gray">
               <label class="form__legend form__legend--tel" for="telephone">Тел</label>
-              <input class="input" type="tel" id="telephone" name="telephone" placeholder="+7 XXX XXX XX XX*" maxlength="16">
+              <input class="form__input--tel input" type="tel" id="telephone" name="telephone" placeholder="+7 XXX XXX XX XX*" maxlength="16">
             </div>
-            <div class="form__small-container gray">
+            <div class="form__small-container form__small-container--gray">
             <label class="form__legend form__legend--email" for="email">E-mail</label>
-            <input class="input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+            <input class="form__input--email input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
           </div>
           <div class="form__small-container form__small-container--textarea">
             <label class="form__legend form__legend--add" for="additional">Доп</label>

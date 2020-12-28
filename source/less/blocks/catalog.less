@@ -53,7 +53,9 @@
 }
 
 .catalog__container {
-  padding: 27px 45px 27px 28px;
+  padding: 27px 50px 27px 34px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .catalog__container:hover {
@@ -110,27 +112,20 @@
 
 .catalog__product-price {
   font-weight: bold;
+  position: relative;
   font-size: 15px;
   line-height: 24px;
+  border-top: 1px solid @gray-table;
+  padding-top: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
   }
 }
 
-.catalog__product-price::before {
-  content: "";
-  position: absolute;
-  width: 204px;
-  height: 1px;
-  background-color: @gray-table;
-  top: 315px;
-}
-
 .catalog__product-svg {
   position: absolute;
-  left: 190px;
-  top: 110px;
+  right: 0;
 }
 
 .catalog__product-svg path:hover,

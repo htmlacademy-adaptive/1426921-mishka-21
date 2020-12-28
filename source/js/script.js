@@ -1,4 +1,4 @@
-const searchButton = document.querySelector(".catalog__product-svg");
+const searchButton = document.querySelector(".featured__button");
 const popup = document.querySelector(".modal-cart");
 
 searchButton.addEventListener ("click", function (evt) {
