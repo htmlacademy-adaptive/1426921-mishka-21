@@ -2,7 +2,7 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  padding: 28.5px 0 28.5px 0;
+  padding: 20px 0 28px 0;
   color: @black;
 
   @media (max-width: @mobile-width-only) {
@@ -11,6 +11,11 @@
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+    padding: 43px 0 0 0;
   }
 }
 
@@ -21,5 +26,19 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 41px;
+  }
+}
+
+.site-list__item--knitting::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 88px;
+    left: 170px;
+    top: 11px;
+    background: @black;
+    mix-blend-mode: normal;
+    opacity: 0.1;
   }
 }

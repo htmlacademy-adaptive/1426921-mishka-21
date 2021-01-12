@@ -16,7 +16,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 150px;
+    margin-left: 100px;
+    margin-right: 55px;
   }
 }
 
@@ -25,7 +26,6 @@
   grid-template-columns: 1fr 3fr;
   padding-left: 30px;
   line-height: 30px;
-  gap: 20px;
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
@@ -47,6 +47,10 @@
   }
 }
 
+.contacts__small-wrapper iframe {
+  width: 100%;
+}
+
 .contacts__small-wrapper::before {
   content: "";
   display: block;
@@ -54,15 +58,15 @@
   width: 67px;
   height: 100px;
   position: absolute;
-  top: 140px;
-  left: 138px;
+  top: 141px;
+  left: 126px;
 
   @media (min-width: @tablet-width) {
-    left: 375px;
+    left: 335px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 241px;
+    left: 212px;
   }
 }
 
@@ -125,6 +129,8 @@
 .contacts__write-us-button {
   padding: 16px 50px;
   margin: 42px 0 42px 35px;
+  display: block;
+  text-align: center;
 
   @media (min-width: @desktop-width) {
     position: absolute;
