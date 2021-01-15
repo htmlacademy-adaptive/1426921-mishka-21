@@ -19,7 +19,7 @@
   text-align: center;
   flex: 100%;
   height: 283px;
-  padding: 90px 40px 0 40px;
+  padding: 73px 43px 0 37px;
   box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
@@ -32,8 +32,8 @@
     line-height: 50px;
     background-image: url("../../img/background-tablet.jpg");
     background-size: 772px auto;
-    padding-bottom: 470px;
-    padding-top: 160px;
+    padding-bottom: 473px;
+    padding-top: 155px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/background-tablet2x.jpg");
@@ -46,7 +46,7 @@
     background-image: url("../../img/background-desktop.jpg");
     background-size: 1150px auto;
     padding-bottom: 470px;
-    padding-top: 160px;
+    padding-top: 155px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/background-desktop2x.jpg");
@@ -70,7 +70,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    top: 727px;
+    top: 735px;
   }
 
   @media (min-width: @desktop-width) {
@@ -95,7 +95,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 24px 190px 35px 30px;
+    padding: 24px 190px 50px 35px;
   }
 }
 
@@ -118,6 +118,11 @@
   left: auto;
   right: 50px;
   opacity: 0.5;
+
+  @media (min-width: @tablet-width) {
+    top: 30px;
+    right: 37px;
+  }
 }
 
 .intro-main__button:hover::after {
@@ -145,6 +150,7 @@
   opacity: 0.5;
 
   @media (min-width: @tablet-width) {
-    top: 20px;
+    right: 36px;
+    top: 30px;
   }
 }

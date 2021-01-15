@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 105px;
-    margin-top: 70px;
+    margin-top: 90px;
   }
 }
 
@@ -24,12 +24,15 @@
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  padding-left: 30px;
+  padding-left: 15px;
   line-height: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+  margin-top: 18px;
+  gap: 10px;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 70px 263px 70px 263px;
+    grid-template-columns: 70px 233px 80px 283px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,6 +52,7 @@
 
 .contacts__small-wrapper iframe {
   width: 100%;
+  position: relative;
 }
 
 .contacts__small-wrapper::before {
@@ -73,16 +77,21 @@
 .contacts__title {
   font-weight: bold;
   font-size: 18px;
-  margin-left: 30px;
+  margin-left: 15px;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 49px;
+    margin-left: 20px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 77px;
+    margin-left: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -98,17 +107,30 @@
     height: 81px;
   }
 
+  @media (min-width: @tablet-width) {
+    top: 26px;
+    right: 45px;
+  }
+
   @media (min-width: @desktop-width) {
-    left: 0;
+    left: 20px;
+    top: 60px;
   }
 }
 
 .contacts__type {
   font-size: 14px;
   color: @brown-text;
+  margin-top: 12px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
+    margin-left: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 15px;
+    margin-left: 5px;
   }
 }
 
@@ -127,15 +149,20 @@
 }
 
 .contacts__write-us-button {
-  padding: 16px 50px;
-  margin: 42px 0 42px 35px;
+  padding: 14px 40px;
+  margin: 36px 20px 43px 20px;
   display: block;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 58px;
+    margin-bottom: 55px;
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
-    bottom: -37px;
-    left: -400px;
+    bottom: -45px;
+    left: -385px;
   }
 }
 

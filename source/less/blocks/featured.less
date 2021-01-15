@@ -10,16 +10,19 @@
   line-height: 30px;
   margin: 0;
   z-index: 15;
+  margin-top: -5px;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 20px;
+    margin-left: 23px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 50px;
-    left: 170px;
+    top: 95px;
+    left: 182px;
     font-size: 54px;
     line-height: 57px;
   }
@@ -31,17 +34,18 @@
   line-height: 17px;
   color: @mint-light;
   text-transform: uppercase;
-  margin: 12px 0 0 0;
+  margin: 9px 0 0 0;
 
   @media (min-width: @tablet-width) {
     text-align: center;
-    margin-right: 60px;
+    margin-right: 50px;
+    margin-top: 25px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 55px;
-    left: 10px;
+    top: 93px;
+    left: 55px;
   }
 }
 
@@ -49,28 +53,49 @@
   font-size: 15px;
   line-height: 24px;
   color: @brown-text;
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin: 0;
+    margin: 0 0 0 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 55px;
+    margin-left: 10px;
   }
 }
 
 .featured-table {
-  margin: 5px 0 28px 0;
+  margin: 5px 0 25px 0;
   color: @brown-text;
+
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+    margin-top: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 45px;
+  }
 }
 
 .featured-table tr {
   display: flex;
   border-bottom: 1px solid @gray-table;
-  padding: 9px 0;
+  padding: 7px 0;
+  font-size: 15px;
   line-height: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 7px 0;
+  }
 }
 
 .featured-table__cell {
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .featured__price {
@@ -82,6 +107,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    margin-top: 25px;
+    margin-left: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 10px;
   }
 }
 
@@ -90,7 +121,15 @@
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    padding: 16px 86px;
+    padding: 14px 75px;
+    margin-top: 12px;
+    margin-left: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 15px 95px;
   }
 }
 
@@ -113,6 +152,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     position: relative;
+    margin-top: 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -153,5 +193,6 @@
     grid-row-start: 1;
     grid-row-end: 3;
     margin-left: auto;
+    margin-top: 10px;
   }
 }
