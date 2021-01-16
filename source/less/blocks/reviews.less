@@ -7,7 +7,7 @@
   background-image: url("../../img/zigzag-line-mobile.svg");
   display: block;
   height: 6px;
-  margin: 0;
+  margin-top: 10px;
   position: absolute;
   width: 100%;
   left: 0;
@@ -34,7 +34,7 @@
     background-image: url("../../img/review-tablet.jpg");
     background-repeat: no-repeat;
     background-size: 350px 457px;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     margin-bottom: 60px;
 
     @media (min-resolution: 2dppx) {
@@ -45,7 +45,9 @@
   @media (min-width: @desktop-width) {
     background-image: url("../../img/review-desktop.jpg");
     padding-left: 175px;
-    padding-bottom: 95px;
+    padding-bottom: 65px;
+    margin-top: 35px;
+    margin-left: 50px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/review-desktop2x.jpg");
@@ -57,15 +59,19 @@
   font-weight: bold;
   font-size: 25px;
   margin-left: 30px;
+  margin-top: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-top: 85px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-top: 77px;
+    margin-left: 0;
   }
 }
 
@@ -82,14 +88,17 @@
 .reviews__text {
   font-size: 15px;
   color: @brown-text;
-  margin: 0;
+  margin: -15px 0 0 0;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
+    margin-top: -37px;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 73px;
+    margin-top: -40px;
+    margin-left: -30px;
   }
 }
 
@@ -99,28 +108,40 @@
   line-height: 24px;
   font-style: normal;
   display: block;
-  margin-top: 20px;
+  margin-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+    margin-left: 3px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 43px;
+    margin-left: -30px;
+  }
 }
 
 .reviews__author-email {
   font-size: 17px;
-  margin: 10px 0;
+  margin: 3px 0;
+
+  @media (min-width: @desktop-width) {
+    margin-left: -30px;
+    margin-top: 5px;
+  }
 }
 
 .reviews__write-review-button {
-  padding: 16px 80px;
-  margin: 40px 30px;
+  padding: 15px 80px;
+  margin: 35px 33px;
   display: block;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     grid-column-start: 2;
     grid-row-start: 1;
-    margin: 30px 20px 55px 190px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 50px 0 50px 300px;
-    padding: 16px 50px;
+    margin: 80px 30px 50px 273px;
+    padding: 14px 39px;
   }
 }
