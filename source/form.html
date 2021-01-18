@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body container">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source srcset="img/mishka-logo-desktop.svg.svg" media="(min-width: 1150px)">
           <source srcset="img/mishka-logo-tablet.svg.svg" media="(min-width: 768px)">
@@ -55,7 +55,7 @@
         </section>
         <form class="form">
           <div class="form__fieldset">
-          <p class="form__legend form__legend--type">Тип</p>
+          <legend class="form__legend form__legend--type">Тип</legend>
           <div class="form__fieldset-wrapper">
             <input class="form__radio-accessories visually-hidden" type="radio" id="accessories" value="accessories" name="accessories" checked>
             <label class="form__radio-label label" for="accessories">Аксессуар для интерьера</label>
@@ -64,7 +64,7 @@
           </div>
         </div>
           <div class="form__fieldset form__fieldset--gray">
-          <p class="form__legend form__legend--color">Цвет</p>
+          <legend class="form__legend form__legend--color">Цвет</legend>
           <ul class="form__checkbox form__list list">
             <li class="form__checkbox-item">
               <input class="form__checkbox-input visually-hidden" type="checkbox" id="checkbox-white" name="checkbox-color[]" checked>
@@ -93,7 +93,7 @@
           </ul>
         </div>
           <div class="form__fieldset">
-            <p class="form__legend form__legend--name">ФИО</p>
+            <legend class="form__legend form__legend--name">ФИО</legend>
             <ul class="form__list list">
               <li class="form__personal-info">
                 <label class="label" for="name">Имя:</label>
