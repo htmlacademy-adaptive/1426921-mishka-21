@@ -5,7 +5,7 @@ const popup = document.querySelector(".modal-cart");
 searchButton ? searchButton.addEventListener ("click", function (evt) {
 evt.preventDefault();
 popup.classList.toggle("modal-show");
-}): '';
+}): "";
 
 for(var i = 0; i < cart.length; i++) {
 cart[i].addEventListener("click", function (evt) {
