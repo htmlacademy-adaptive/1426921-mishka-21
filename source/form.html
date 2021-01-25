@@ -51,10 +51,12 @@
       <main>
         <section class="intro-form">
           <h2 class="intro-form__header">Вязание на заказ</h2>
+          <div class="intro-form__container">
           <p class="intro-form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
         </section>
         <form class="form">
-          <div class="form__fieldset">
+          <div class="form__fieldset center">
           <p class="form__legend form__legend--type">Тип</p>
           <div class="form__fieldset-wrapper">
             <input class="form__radio-accessories visually-hidden" type="radio" id="accessories" value="accessories" name="accessories" checked>
@@ -63,7 +65,8 @@
             <label class="form__radio-label label" for="toy">Детская игрушка</label>
           </div>
         </div>
-          <div class="form__fieldset form__fieldset--gray">
+        <div class="form__fieldset-gray center">
+          <div class="form__fieldset">
           <p class="form__legend form__legend--color">Цвет</p>
           <ul class="form__checkbox form__list list">
             <li class="form__checkbox-item">
@@ -92,7 +95,8 @@
             </li>
           </ul>
         </div>
-          <div class="form__fieldset">
+      </div>
+          <div class="form__fieldset center">
             <p class="form__legend form__legend--name">ФИО</p>
             <ul class="form__list list">
               <li class="form__personal-info">
@@ -109,7 +113,8 @@
               </li>
             </ul>
           </div>
-            <div class="form__small-container form__small-container--gray">
+          <div class="form__small-container-gray center">
+            <div class="form__small-container">
               <label class="form__legend form__legend--tel" for="telephone">Тел</label>
               <input class="form__input-tel input" type="tel" id="telephone" name="telephone" placeholder="+7 XXX XXX XX XX*" maxlength="16">
               <svg class="form__svg-tel" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,13 +126,14 @@
                 </g>
                 </svg>
             </div>
-            <div class="form__small-container form__small-container--gray">
+            <div class="form__small-container center">
             <label class="form__legend form__legend--email" for="email">E-mail</label>
             <input class="form__input-email input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
             <svg class="form__svg-email" width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.2" d="M28 0H4C1.8 0 0 1.8 0 4V17C0 19.2 1.8 21 4 21H28C30.2 21 32 19.2 32 17V4C32 1.8 30.2 0 28 0ZM2 5.3L9 10.6L2 15.9V5.3ZM30 17C30 18.1 29.1 19 28 19H4C2.9 19 2 18.1 2 17L9.8 11.1L14.2 14.4C14.7 14.8 15.4 15 16 15C16.6 15 17.3 14.8 17.8 14.4L22.2 11.1L30 17ZM30 15.8L23 10.5L30 5.2V15.8ZM17.2 13.6C16.8 13.9 16.4 14 16 14C15.6 14 15.1 13.9 14.8 13.6L10.7 10.5L9.9 9.9L2 4C2 2.9 2.9 2 4 2H28C29.1 2 30 2.9 30 4L17.2 13.6Z" fill="black"/>
             </svg>
           </div>
+        </div>
           <div class="form__small-container form__small-container--textarea">
             <label class="form__legend form__legend--add" for="additional">Доп</label>
             <textarea rows="7" name="additional" id="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
